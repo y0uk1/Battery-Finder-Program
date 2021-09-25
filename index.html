@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Battery Finder Program</title>
+</head>
+<body>
+  <div class="vh-100 bg-light">
+    <div class="d-flex justify-content-center align-items-center bg-primary text-white p-3 mb-4">
+      <div class="text-center">
+        <h2>Battery Finder Program</h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-start p-2">
+        <div class="col-6">
+          <h4>step1: Select your brand</h4>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Brand</label>
+            </div>
+            <select class="custom-select user-input" id="brandSelect">
+              <option value="" selected="selected"></option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start p-2">
+        <div class="col-6">
+          <h4>step2: Select your Model</h4>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Brand</label>
+            </div>
+            <select class="custom-select user-input" id="modelSelect">
+              <option value="" selected="selected"></option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start p-2">
+        <div class="col-6">
+          <h4>step3: Input Accessory Power Consumption</h4>
+          <div class="input-group mb-2">
+            <input type="text" class="form-control user-input" value="0" id="accessory-power-consumption-input">
+            <div class="input-group-append">
+              <span class="input-group-text">W</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start p-2">
+        <div class="col-12">
+          <h4>step4: Choose Your Battery</h4>
+          <div id="candidates">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</body>
+</html>
